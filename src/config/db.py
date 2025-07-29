@@ -20,10 +20,10 @@ Recopila:
 """
 
 import json, os
-from src.config import config
+from src.config import entorno
 
 ruta = os.path.dirname(os.path.abspath(__file__)) + \
-    f'/db_{config["entorno"].lower()}.json'
+    f'/db_{entorno.lower()}.json'
 
 def constructor_uri() -> dict:
     """ Funcion: Construccion URI
